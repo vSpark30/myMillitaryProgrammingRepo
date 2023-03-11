@@ -1,0 +1,1 @@
+I just want to say here that I did not focus much on the responsiveness of each exercise, maybe a little but not too much so please it'd be better not to resize the pages at very small viewports, thanks!

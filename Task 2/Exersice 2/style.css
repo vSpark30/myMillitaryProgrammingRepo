@@ -1,0 +1,207 @@
+*::before,
+*::after,
+* {
+  padding: 0;
+  margin: 0;
+  /* margin: 5px; */
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+div:not(header) {
+  margin: 8px;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+header {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: lightblue;
+  white-space: nowrap;
+}
+header h1,
+div {
+  grid-column: span 1;
+  color: rgb(96, 56, 57);
+  text-align: center;
+}
+.banner {
+  grid-column: span 5;
+  background: url(../Images/paws_banner.png);
+  background-size: contain;
+  opacity: 0.4;
+}
+.div {
+  grid-column: span 6;
+  height: 20px;
+  border: solid;
+  background-color: rgb(96, 56, 57);
+  color: rgb(96, 56, 57);
+}
+.article-links {
+  grid-column: span 2;
+}
+.content {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.content section {
+  grid-row: span 1;
+}
+.art {
+  height: 33.3%;
+  word-break: break-all;
+  overflow: hidden;
+  border: solid 1px rgb(96, 56, 57);
+}
+.art h4 {
+  background: rgb(96, 56, 57);
+  color: white;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.art-img {
+  aspect-ratio: 1/1;
+  float: left;
+  height: 45%;
+}
+.art1 .art-img {
+  background: url(../Images/cats1.png);
+  background-size: cover;
+  background-position: center;
+}
+.art2 .art-img {
+  background: url(../Images/cats2.png);
+  background-size: cover;
+  background-position: center;
+}
+.art3 .art-img {
+  background: url(../Images/cats3.png);
+  background-size: cover;
+}
+.art4 {
+  height: 33.3%;
+  word-break: break-all;
+  overflow: hidden;
+}
+.art4 .art-img {
+  background: url(../Images/cats5.png);
+  background-position: center;
+  background-size: cover;
+}
+.articles {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div2 {
+  grid-column: span 6;
+  height: 4px;
+  background-color: rgb(96, 56, 57);
+  color: rgb(96, 56, 57);
+  width: 80%;
+}
+.art-banner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 170px;
+  padding: 5px;
+  background-color: rgb(96, 56, 57);
+  color: white;
+}
+.art-banner-img {
+  grid-column: span 3;
+  background: url(../Images/cats4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.art-banner-txt {
+  grid-column: span 1;
+  color: white;
+}
+.links .img {
+  height: 100px;
+  width: 75%;
+  background: url(../Images/bone_pendalion.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.img h1 {
+  font-family: serif !important;
+}
+.search-sec {
+  background-color: lightblue;
+  border: solid 1px rgb(96, 56, 57);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-sec h4 {
+  color: white;
+  background: rgb(96, 56, 57);
+  text-align: center;
+  letter-spacing: 3px;
+  width: 100%;
+}
+.search-sec input,
+.search-sec button {
+  margin: 10px;
+}
+.search-sec button {
+  width: 90px;
+  font-weight: bold;
+}
+.links {
+  margin-top: 20px;
+  border: solid 1px rgb(96, 56, 57);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links ul {
+  text-align: center;
+}
+.links li {
+  list-style: none;
+  font-weight: bold;
+  margin: 10px 0px !important;
+}
+.feature-art-link {
+  aspect-ratio: 1/1;
+  width: 90%;
+  background: url(../Images/cats_ad.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: x-large;
+}
+.nav-links {
+  grid-column: span 7;
+  display: flex;
+  justify-content: center;
+}
+.nav-links ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-links li {
+  font-weight: bold;
+  color: rgb(96, 56, 57);
+  border-right: solid 1px;
+  padding: 0px 10px;
+  white-space: nowrap;
+}

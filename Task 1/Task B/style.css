@@ -1,0 +1,261 @@
+/*Figure 1*/
+*::before, *::after, *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    /*outline: solid red 1px;*/
+}
+.body-f1{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    background-color: lightgray;
+    width: 290px;
+    margin-top: 250px;
+    border: solid 1px green;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+.fields{
+    align-self: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+.fields span{
+    padding: 3px;
+    display: flex;
+    margin-top: 10px;
+    width: 97%;
+    background: white;
+    border: solid green 1px;
+}
+.fields input{
+    width: 100%;
+    border: solid green 1px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 0px 10px;
+}
+.f1-btn{
+    transition: 80ms;
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+.f1-btn:hover{
+    transform: scale(0.9);
+}
+.f1-btn:active{
+    transform: scale(0.8);
+}
+.icon1{
+    background: url(/Web\ Icons/solid_icons/08.Web/Png/@2x/user@High.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    width: 11%;
+}
+.icon2{
+    background: url(/Web\ Icons/solid_icons/03.Hotel/Png/@2x/key@High.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    width: 11%;
+}
+
+
+
+
+
+/*Figure 2*/
+.body-f2{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background: orange;
+}
+.left h4, h5{
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.f2-logo{
+    aspect-ratio: 1/1;
+    width: 50px;
+    background: url(/Web\ Icons/solid_icons/12.Office/Png/@2x/mail-read@High.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+}
+.f2-input{
+    width: 100%;
+}
+.body-f2 .right p{
+    margin: 10px 0px;
+}
+.f2-btn{
+    transition: 50ms;
+    margin-top: 15px;
+    width: 100px;
+    padding: 7px;
+    background-color: orange;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.f2-btn:hover{
+    transform: scale(0.9);
+}
+.f2-btn:active{
+    transform: scale(0.8);
+}
+
+
+
+
+
+/*Figure 3*/
+.f3-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.f3-form{
+    border: solid 1px darkcyan;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.f3-form .header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkcyan;
+    width: 100%;
+    padding: 10px 0px;
+}
+.f3-form .footer{
+    width: 100%;
+    height: 50px;
+    background-color: darkcyan;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.f3-form .body span{
+    display: flex;
+    margin: 15px;
+}
+.f3-form .body span input{
+    width: 100%;
+}
+.f3-icon1{
+    margin-right: 10px;
+    padding: 5px;
+    background: url(/Web\ Icons/solid_icons/08.Web/Png/@2x/user@High.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.f3-icon2{
+    margin-right: 10px;
+    padding: 5px;
+    background: url(/Web\ Icons/solid_icons/12.Office/Png/@2x/mail-read@High.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.f3-icon3{
+    margin-right: 10px;
+    padding: 5px;
+    background: url(/Web\ Icons/solid_icons/08.Web/Png/@2x/chat@High.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+.txt-area-f3{
+    width: 100%;
+}
+
+
+
+
+
+/*Figure 4*/
+.f4-container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header header header"
+    "navbar navbar navbar"
+    "col col col"
+    "col col col"
+    "dis dis dis"
+    "footer footer footer"
+    ;
+}
+.f4-container div{
+    text-align: center;
+    padding: 10px;
+    background-color: lavender;
+    margin: 4px;
+    user-select: none;
+}
+.f4-header{
+    grid-area: header;
+}
+.f4-navbar{
+    grid-area: navbar;
+}
+.col{
+    transition: 60ms;
+    margin: 4px 25px!important;
+    cursor: pointer;
+}
+.display{
+    grid-area: dis;
+}
+.f4-footer{
+    transition: 60ms;
+    grid-area: footer;
+    cursor: pointer;
+}
+.col:hover, .f4-footer:hover{
+    transform: scale(0.9);
+}

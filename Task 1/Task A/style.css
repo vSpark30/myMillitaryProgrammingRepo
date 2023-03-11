@@ -1,0 +1,207 @@
+*::before, *::after, *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 10px;
+    width: 1000px;
+    background: rgb(241, 240, 240);
+}
+.header{
+    border: solid black 1px;
+    border-bottom: none;
+}
+.top-header, .logo, .image{
+    display: flex;
+    height: 100px;
+    background-color: white;
+}
+.logo{
+    width: 130px;
+    background: url(Images/IUGET\ EN.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image{
+    width: 100%;
+    background: url(Images/campus.png);
+    background-size: cover;
+    background-position: bottom;
+    animation: image 25s forwards infinite;
+}
+@keyframes image{
+    50%{
+        background-position: top;
+    }
+}
+.bottom-header{
+    padding: 10px 0px;
+    width: 100%;
+    border: solid black 1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-around;
+}
+.bottom-header button{
+    transition: 90ms;
+    font-size: 15px;
+}
+.bottom-header button:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+.bottom-header button:active{
+    color: blue;
+    background-color: white;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.bottom-header button{
+    padding: 7px;
+    border: 1px solid;
+    background: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.body{
+    display: flex;
+}
+.body div, .body form{
+    padding: 40px;
+}
+.left, .right{
+    border: solid black 1px;
+    width: 100%;
+}
+.right{
+    border-left: none;
+}
+.right h2, .left h2{
+    text-decoration: underline;
+}
+.right li{
+    transition: 50ms;
+    margin-top: 15px;
+}
+.right li:hover{
+    margin-left: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    border: solid black 1px;
+    border-top: none;
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+/*Login/Registration Page*/
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+.login-form span{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.login-form input{
+    width: 250px;
+    margin-left: 10px;
+}
+.login-btn{
+    transition: 200ms;
+    width: 50%;
+    align-self: center;
+    font-size: 17px;
+    background-color: white;
+    border: solid 1px blue;
+    color: blue;
+    font-weight: bold;
+}
+.login-btn:hover{
+    width: 47%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.login-btn:active{
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.psw-fgt{
+    margin-top: 50px;
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+}
+.social-links a{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+    border-right: solid black 1px;
+}
+/*Password Recovery*/
+.single-page{
+    padding: 20px;
+    border: solid 1px;
+}
+.single-page input{
+    margin-left: 10px;
+}
+.single-page span{
+    display: flex;
+}
+.single-page button{
+    margin-top: 15px;
+    padding: 5px 10px;
+    transition: 200ms;
+    align-self: center;
+    font-size: 17px;
+    background-color: white;
+    border: solid 1px blue;
+    color: blue;
+    font-weight: bold;
+}
+.single-page button:hover{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+/*Registration Page*/
+.registration-form{
+    display: flex;
+}
+.registration-form .text p, .fields input, .fields select{
+    margin-top: 10px;
+}
+.registration-form .text p{
+    margin-top: 11.5px;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+/*Recall Form*/
+.recall-form span{
+    margin-top: 10px;
+}
+.recall-form span p{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.buttons button{
+    margin: 0px 10px;
+}
